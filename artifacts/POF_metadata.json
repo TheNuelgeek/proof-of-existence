@@ -41,10 +41,15 @@
 								"internalType": "string",
 								"name": "location",
 								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "ownerAddr",
+								"type": "address"
 							}
 						],
 						"internalType": "struct POF.land",
-						"name": "",
+						"name": "x",
 						"type": "tuple"
 					}
 				],
@@ -52,8 +57,42 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "getLand",
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_ownerAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_location",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "numOfPlot",
+						"type": "uint256"
+					}
+				],
+				"name": "registerLand",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "howmanyLand",
+						"type": "uint256"
+					}
+				],
+				"name": "seeLandDb",
 				"outputs": [
 					{
 						"components": [
@@ -76,68 +115,16 @@
 								"internalType": "string",
 								"name": "location",
 								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "ownerAddr",
+								"type": "address"
 							}
 						],
 						"internalType": "struct POF.land[]",
-						"name": "",
+						"name": "x",
 						"type": "tuple[]"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_owner",
-						"type": "address"
-					},
-					{
-						"internalType": "string",
-						"name": "_name",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "_location",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "numOfPlot",
-						"type": "uint256"
-					}
-				],
-				"name": "registerLand",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					},
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "retriveLandOwnerID",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					},
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -172,11 +159,11 @@
 	},
 	"sources": {
 		"proofOfExistence.sol": {
-			"keccak256": "0x17bb90b411dc383b42b097bb12dbb470f9dbc50489ea1ac2c0f9b5e30b13b4c2",
+			"keccak256": "0x18a89aa42326ad458b588c050ae4bbf4210a5e1d9774c538b62f3529075748dc",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://8a9dac9df26defdfa4ef61fd9f024c9b3382919eb1c4b304cc71dc5ae8774e60",
-				"dweb:/ipfs/QmQVSfPf7GKfUGk6uq56L65aDaPiW5hag5L9gmaEncLDGD"
+				"bzz-raw://f3fd7cb363df2d821368d18f78e90e8725bff579ebe28ff77a83a791f0c6e69a",
+				"dweb:/ipfs/QmdKX8dBKnZyTbqnxn3YbE1kfcQmvw8jWcr4nW6ATwQJuF"
 			]
 		}
 	},
